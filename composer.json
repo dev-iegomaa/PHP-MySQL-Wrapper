@@ -1,0 +1,18 @@
+{
+    "name": "dev-iegomaa/php_mysql_wrapper",
+    "description": "php wrapper for mysql database",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DevIegomaa\\PhpMysqlWrapper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dev-iegomaa",
+            "email": "dev.ibrahimesam67@gmail.com"
+        }
+    ],
+    "require": {}
+}
