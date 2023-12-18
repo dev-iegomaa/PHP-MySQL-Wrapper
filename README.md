@@ -18,11 +18,6 @@ composer require dev-iegomaa/php_mysql_wrapper
 use DevIegomaa\PhpMysqlWrapper\DB;
 $db = new DB('127.0.0.1', 'username', 'password', 'database', 3306);
 
-/* insert/update/delete */
-$id = $db->insert('tablename', ['col1' => 'foo']);
-$db->update('tablename', ['col1' => 'bar'], ['id' => $id]);
-$db->delete('tablename', ['id' => $id]);
-
 /* select */
 $db->select('users', '*')->query()->getAll();
 $db->select('users', 'id', 'name', 'email')->query()->getAll();
